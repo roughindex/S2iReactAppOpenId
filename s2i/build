@@ -1,0 +1,3 @@
+#! /bin/sh
+
+s2i build ../src reactapp.s2i.builder reactapp --runtime-image reactapp.s2i.runtime --runtime-artifact /app

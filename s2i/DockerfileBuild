@@ -1,0 +1,4 @@
+#! /bin/sh
+
+docker build -t reactapp.s2i.builder -f Dockerfile.builder .
+docker build -t reactapp.s2i.runtime -f Dockerfile.runtime .

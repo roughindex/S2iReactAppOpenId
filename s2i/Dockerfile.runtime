@@ -1,0 +1,12 @@
+FROM alpine:latest
+
+RUN apk add --update --no-cache nginx
+
+COPY assemble-runtime run /app/
+
+LABEL io.k8s.description="openresty" \
+      io.k8s.dosplay-name="openresty" \
+      io.openshift.expose-services="8080:http" \
+      io.openshift.s2i.scripts-url="image:///app"
+
+STOPSIGNAL SIGQUIT

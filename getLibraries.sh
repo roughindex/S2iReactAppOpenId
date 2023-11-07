@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 function remove_file (){
 if [ -f "$1" ]; then
     echo "$1 exists removing file"

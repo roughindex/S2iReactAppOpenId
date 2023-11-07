@@ -1,0 +1,4 @@
+#! /bin/sh
+
+rm -rf /var/lib/nginx/html
+mv /app/html /var/lib/nginx/html

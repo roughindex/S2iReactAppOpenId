@@ -197,6 +197,7 @@ function getToken(body)
             method = "POST",
             body = body,
             headers = getHeaders(body),
+            -- TODO: Review this param
             ssl_verify = false,
             keepalive = false
         })

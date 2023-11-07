@@ -1,0 +1,6 @@
+#! /bin/sh
+
+# The node modules are useful for speeding up builds, so keep them.
+
+cd /tmp/src/reactapp/node-modules
+tar -cf - *

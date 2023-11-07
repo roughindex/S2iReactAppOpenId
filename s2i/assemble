@@ -1,0 +1,11 @@
+#! /bin/sh
+
+# s2i will copy the source into /tmp/src 
+cd /tmp/src
+
+# run the build to create the static files in /tmp/src/build
+npm install && npm run build
+
+# move the build to a separate folder
+mv build /app/html
+mv nginx.conf /app/nginx.conf
